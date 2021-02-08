@@ -38,7 +38,10 @@ import android.os.Bundle;
 import android.provider.ContactsContract.Contacts;
 import android.provider.ContactsContract.RawContacts;
 
+import com.sun.org.apache.xpath.internal.operations.String;
+
 import java.lang.reflect.Method;
+import java.util.ArrayList;
 
 public class ContactManager extends CordovaPlugin {
 
@@ -136,8 +139,7 @@ public class ContactManager extends CordovaPlugin {
             }
             else
             {
-                getReadPermission(SAVE_REQ_CODE);
-                getWritePermission(SAVE_REQ_CODE);
+                PermissionHelper.requestPermissions(this, SAVE_REQ_CODE, new String[]{READ, WRITE});
             }
         }
         else if (action.equals("remove")) {
