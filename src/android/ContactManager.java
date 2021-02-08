@@ -38,8 +38,6 @@ import android.os.Bundle;
 import android.provider.ContactsContract.Contacts;
 import android.provider.ContactsContract.RawContacts;
 
-import com.sun.org.apache.xpath.internal.operations.String;
-
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 
