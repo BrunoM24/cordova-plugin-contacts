@@ -136,6 +136,7 @@ public class ContactManager extends CordovaPlugin {
             }
             else
             {
+                getReadPermission(SAVE_REQ_CODE);
                 getWritePermission(SAVE_REQ_CODE);
             }
         }
